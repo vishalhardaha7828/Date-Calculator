@@ -22,16 +22,16 @@
     					justify-content: space-between;
 				}
 				.outputs-wrapper div{
-	    height: 63px;
-    border: 5px solid white;
-    width: 124px;
-    background-color: black;
-    border-radius: 34px;
-    color: white;
-    display: grid;
-    place-items: center;
-    padding: 20px 0;
-    box-shadow: 0 15px 20px rgba(0,0,0,0.3);
+	       				height: 63px;
+    					border: 5px solid white;
+    					width: 124px;
+    					background-color: black;
+    					border-radius: 34px;
+   	 				color: white;
+    					display: grid;
+    					place-items: center;
+    					padding: 20px 0;
+    					box-shadow: 0 15px 20px rgba(0,0,0,0.3);
 				}
 				span{
     					font-size: 30px;
@@ -61,11 +61,11 @@
     					border-radius: 16px;
     					margin-bottom: 15px;
 				}
-Button:hover{
-color: white;
-Background: black;
-border: 3px solid white;
-}
+				Button:hover{
+					color: white;
+					Background: black;
+					border: 3px solid white;
+				}
 				.box{
 					height: 246Px;
     					background: black;
@@ -76,129 +76,121 @@ border: 3px solid white;
     					margin-bottom: 20px;
 				}
   </style>
-<body>
-    <h1>  
-            WELLCOME TO MY  
-    </h1>
-    <h2>Date Calculator</h2>
-    <p>
-         Calculate Your Age, Calculate Your Dates Etc.
-    </p>
-<div class = "box">
-   <h2>From</h2>
-    <input type="Number" id="Day1" placeholder="Day">
-    <input type="Number" id="Month1" placeholder="Month">
-    <input type="Number" id="Year1" placeholder="Year"><br>
+	<body>
+		<h1>  WELLCOME TO MY  </h1>
+    		<h2> Date Calculator </h2>
+		<p> Calculate Your Age, Calculate Your Dates Etc. </p>
+		<div class = "box">
+   		<h2>	From	</h2>
+			<input type="Number" id="Day1" placeholder="Day">
+    			<input type="Number" id="Month1" placeholder="Month">
+   			<input type="Number" id="Year1" placeholder="Year"><br>
 
-   <h2>To</h2>								
-    <input type="Number" id="Day2" placeholder="Day">
-    <input type="Number" id="Month2" placeholder="Month">
-    <input type="Number" id="Year2" placeholder="Year"><br><br>
-</div>
-    <button type="button" onclick="Calculate()">Calculate</button>
-    <button type="button" onclick="Clear()">clear</button><br>
-<div class="outputs-wrapper">
-            				<div>
-                				<span id="years">
-                    				-
-                				</span>
-                				<p>
-                   	 				Years
-                				</p>
-            				</div>
-            				<div>
-                				<span id="months">
-                    				-
-                				</span>
-                				<p>
-                   					Months
-                				</p>
-            				</div>
-            				<div>
-                				<span id="days">
-                    				-
-                				</span>
-                				<p>
-                    					Days
-                				</p>
-            				</div>
-        			</div>
+   		<h2> To </h2>								
+    			<input type="Number" id="Day2" placeholder="Day">
+    			<input type="Number" id="Month2" placeholder="Month">
+    			<input type="Number" id="Year2" placeholder="Year"><br><br>
+		</div>
+    			<button type="button" onclick="Calculate()">Calculate</button>
+    			<button type="button" onclick="Clear()">clear</button><br>
+		<div class="outputs-wrapper">
+			<div>
+				<span id="years">
+					-
+				</span>
+				<p>
+					Years
+				</p>
+			</div>
+			<div>
+				<span id="months">
+					-
+				</span>
+				<p>
+					Months
+				</p>
+			</div>
+			<div>
+				<span id="days">
+					-
+				</span>
+				<p>
+					Days
+                		</p>
+			</div>
+		</div>
 
     <script>
-      
-
-    function Calculate() {
-
-        var a = document.getElementById("Day1").value;
-        var b = document.getElementById("Day2").value;
-
-if (a < b){
-        var c = (parseInt(a) + 30) - parseInt(b);
-        document.getElementById("days").innerHTML = c;
-}
-else if (a > b){
-        var c = parseInt(a) - parseInt(b);
-        document.getElementById("days").innerHTML = c;
-}
-else if (a = b){
-        document.getElementById("days").innerHTML = "00";
-}
-
-
-        var d = document.getElementById("Month1").value;
-        var e = document.getElementById("Month2").value;
-
-if (d < e){
-        var f = (parseInt(d) + 12) - parseInt(e);
-        document.getElementById("months").innerHTML = f;
-}
-else if (d > e){
-        var f = parseInt(d) - parseInt(e);
-        document.getElementById("months").innerHTML = f;
-}
-else if (d = e){
-        document.getElementById("months").innerHTML = "00";
-}
-        var g = document.getElementById("Year1").value;
-        var h = document.getElementById("Year2").value;
-
-if (g < h){
-        var i = (parseInt(g) + 12) - parseInt(h);
-        document.getElementById("years").innerHTML = i;
-}
-else if (g > h){
-        var i = (parseInt(g) -1) - parseInt(h);
-        document.getElementById("years").innerHTML = i;
-}
-else if (g = h){
-        document.getElementById("years").innerHTML = "00";
-}
-}
-function Clear() {
-   	var inp = document.getElementById('Day1');
-	inp.value = '';
-   	var inp = document.getElementById('Day2');
-	inp.value = '';
-   	var inp = document.getElementById('Month1');
-	inp.value = '';
-   	var inp = document.getElementById('Month2');
-	inp.value = '';
-   	var inp = document.getElementById('Year1');
-	inp.value = '';
-   	var inp = document.getElementById('Year2');
-	inp.value = '';
-   	var inp = document.getElementById('days');
-	inp.value = '';
-   	var inp = document.getElementById('months');
-	inp.value = '';
-   	var inp = document.getElementById('years');
-	inp.value = '';			 
-		}
-
-
-
-
+	    
+	    function Calculate() {
+		    
+		    var a = document.getElementById("Day1").value;
+        	    var b = document.getElementById("Day2").value;
+	    
+		
+		    if (a < b){
+			    var c = (parseInt(a) + 30) - parseInt(b);
+                            document.getElementById("days").innerHTML = c;
+		    }
+		    else if (a > b){
+			    var c = parseInt(a) - parseInt(b);
+			    document.getElementById("days").innerHTML = c;
+		    }
+		    else if (a = b){
+			    document.getElementById("days").innerHTML = "00";
+		    }
+		    
+		    var d = document.getElementById("Month1").value;
+        	    var e = document.getElementById("Month2").value;
+		    
+		    if (d < e){
+			    var f = (parseInt(d) + 12) - parseInt(e);
+			    document.getElementById("months").innerHTML = f;
+		    }
+		    else if (d > e){
+			    var f = parseInt(d) - parseInt(e);
+			    document.getElementById("months").innerHTML = f;
+		    }
+		    else if (d = e){
+			    document.getElementById("months").innerHTML = "00";
+		    }
+		    
+		    var g = document.getElementById("Year1").value;
+		    var h = document.getElementById("Year2").value;
+		    
+		    if (g < h){
+			    var i = (parseInt(g) + 12) - parseInt(h);
+			    document.getElementById("years").innerHTML = i;
+		    }
+		    else if (g > h){
+			    var i = (parseInt(g) -1) - parseInt(h);
+			    document.getElementById("years").innerHTML = i;
+		    }
+		    else if (g = h){
+			    document.getElementById("years").innerHTML = "00";
+		    }
+	    }
+	    
+	    function Clear() {
+		    var inp = document.getElementById('Day1');
+		    inp.value = '';
+		    var inp = document.getElementById('Day2');
+		    inp.value = '';
+		    var inp = document.getElementById('Month1');
+		    inp.value = '';
+		    var inp = document.getElementById('Month2');
+		    inp.value = '';
+		    var inp = document.getElementById('Year1');
+		    inp.value = '';
+		    var inp = document.getElementById('Year2');
+		    inp.value = '';
+		    var inp = document.getElementById('days');
+		    inp.value = '';
+		    var inp = document.getElementById('months');
+		    inp.value = '';
+		    var inp = document.getElementById('years');
+		    inp.value = '';			 
+	    }
     </script>
-</body>
-  
+</body> 
 </html>
